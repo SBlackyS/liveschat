@@ -1,0 +1,157 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Klee One', cursive;
+}
+html, body{
+    background-image: url("../img/Sailor-Moon.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    /* background-color: black; */
+}
+
+form{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+a:active{
+    color: blue !important;     
+}
+form input{
+    padding: 10px;
+    width: 100%;
+    margin: 5px;
+    margin-left: 0;
+    border-radius: 3px;
+}
+form input:nth-of-type(1){
+    margin-top: 10px;
+}
+form input:nth-of-type(2){
+    margin-bottom: 0 !important;
+}
+
+form button{
+    margin-top:10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FFFF;
+}
+
+.container-Padre{
+    position: fixed;
+    background-color: rgba(8,8,8,0.2);
+    height: 400px;   
+    width: 500px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    border-radius: 10px;
+    /* opacity: 0.2 ; */
+}
+.container{
+    background-color: rgba(8, 8, 8, 0.1);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin:auto !important;
+    border-radius: 10px;
+}
+.sesionStart, 
+.register{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    /* margin: 20px; */
+    width: 350px;
+    height: 300px;
+}
+.sesionStart a:nth-child(1), 
+.sesionStart h3, 
+.sesionStart p,
+.register a:nth-child(1),
+.register h3,
+.register p{
+    /* margin: auto; */
+    /* color: black;
+    box-shadow: none !important;
+    text-decoration: none !important; */
+    background-color: #FFFF;
+    padding: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2px;
+    font-size: 13px;
+}
+.sesionStart a, .register a{
+    margin-top: 10px !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
+    color:black;
+}
+.sesionStart h3, .register h3{
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    padding-bottom: 7px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;    
+    /* margin-bottom: 10px !important; */
+}
+.sesionStart p, .register p{
+    text-align: center;
+    padding-bottom: 7px;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-top: 3px;
+}
+.sesionStart p a, .register p a{
+    color:red;
+}
+.sesionStart{
+    /* display: block !important; */
+    margin: auto;
+}
+
+.interno{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* padding: 10px; */
+    width: 300px;
+}
+.interno button{
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-style:normal;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

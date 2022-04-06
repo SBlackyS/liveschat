@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/login.css">
+    <title>Sesion-Start</title>
+</head>
+<body>
+    <div class="container-Padre">
+        <div class="container">
+            <div class="container-login">
+                <div class="sesionStart" id="sesionStart" style="display: block;">
+                    <h3>¿Tienes una cuenta? <br> Inicia sesión para continuar</h3>
+                    <form action="#">
+                        <input type="text" name="" id="" placeholder="Correo electrónico" required>
+                        <input type="password" name="" id="" placeholder="Contraseña" required>
+                        <div class="interno">
+                            <a href="#">¿Has olvidado la contraseña?</a>
+                            <button class="btnIniciar">Iniciar Sesion</button>
+                        </div>  
+                    </form>
+                    <p>¿No tienes cuenta? <br> <a href="#" onclick="sesionRegister()">REGÍSTRATE</a>, ES GRATIS!!!</p>
+                </div>
+                <div class="register" id="sesionRegister" style="display: none;">
+                    <h3>Onii-chan <br> Regístrate Nya!!!</h3>
+                    <form action="#">
+                        <input type="text" name="" id="" placeholder="Nombre completo" required>
+                        <input type="password" name="" id="" placeholder="Contraseña" required>
+                        <input type="password" name="" id="" placeholder="Confirma tu contraseña" required>
+                        <button class="btnRegister">Registrarse</button>
+                    </form>
+                    <p>¿Tienes una cuenta? <br> <a href="#" onclick="sesionStart()">Iniciar Sesion</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+</html>
