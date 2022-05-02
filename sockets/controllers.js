@@ -47,7 +47,7 @@ const socketController = (socket) =>{
 
     })
 
-    socket.on('enviar-mensaje', (payload, callback) => {//Está recibiendo el evento 'enviar-mensaje' junto con su parámetro payload (Puede ser cualquier nombre)
+    socket.on('enviar-mensaje', (payload, callback) => {
         const id = 123;
         callback(id);
         socket.broadcast.emit('enviar-mensaje', payload );
