@@ -1,0 +1,88 @@
+*{
+    border: 0;
+    box-shadow: none;
+    text-decoration: none;
+    font-family: 'Klee One', cursive;
+    
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.subMenu{
+    z-index: 100;
+    background-color: aqua;
+    width: 100%;
+    max-width: 150px;
+    height: 100%;
+    display: block;
+    position: fixed;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    left: 0px;
+    transition: all 500ms;
+
+}
+.container-user{
+    margin-left: 10px;
+}
+
+.navCon a, 
+.navCon-Inactivo a{
+    margin: auto;
+    color: white; 
+}
+.navCon:active, 
+.navCon-Inactivo:active{
+    background-color: aqua;
+    transition: 300ms;
+}
+/* Cambiando diseño del navCon ACTIVO */
+.navCon-Padre{
+    margin-left: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    max-width: 150px;
+    transition: all 500ms;
+}
+.navCon {
+    z-index: 100;   
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 0;
+    margin-left: 0;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: red;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 500ms;
+}
+/* Cambiando diseño del navCon INACTIVO */
+
+.navCon-Padre-Inactivo{
+    display: block;
+}
+.navCon-Inactivo{
+    background-color: black !important;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     margin: auto !important;
+     display: flex;
+     justify-content: center;
+    transition: all 500ms;
+}

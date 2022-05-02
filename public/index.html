@@ -1,0 +1,56 @@
+<script>
+    const correo = localStorage.getItem("correo");
+    if(correo == undefined){
+        window.location.href='./login.html';
+    }
+    // alert("xd");
+</script>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/subMenu.css">
+    <!-- <link rel="stylesheet" href="./styles/cabecera.css"> -->
+    <link rel="stylesheet" href="styles/container.css">
+    <title>WenSe</title>
+</head>
+<body>
+<div class="" id="subMenu">
+    <div class="navCon-Padre">
+        <p class="navCon" onclick="navCon()" id="navCon"><a href="#">&#9776;</a></p>
+    </div>
+    <div class="container-user" id="container-user" style="display: none;">
+        <p class="nombreUser">Paulo R.</p>
+        <p class="foto">Mi Foto va aquí.</p>
+        <p><a href="#">Perfil</a></p>
+        <p><a href="chats.html">Mis Chats</a></p>
+        <div class="fastChat">
+            <p><a href="#">Acceso Rápidos</a></p>
+        </div>
+        <!-- <p><a href="#">Proximamente...</a></p>   -->
+    </div>
+    
+</div>
+<div class="container-Padre">
+    <div class="cabecera"><h1>WenSe</h1></div>
+    <div class="container">
+        <div class="comunity" onclick="window.location.href='comunidad.html'"><div class="comunity-trasera">Shigatsu</div></div>
+        <div class="comunity"><div class="comunity-trasera">Hola</div></div>
+        <div class="comunity"><div class="comunity-trasera">Hola</div></div>
+        <div class="comunity"><div class="comunity-trasera">Hola</div></div>
+        <div class="comunity"><div class="comunity-trasera">Hola</div></div>
+    </div>
+    <div class="footer"><h1>Comunidades</h1></div>
+</div>
+
+<script src="./socket.io/socket.io.js"></script>
+<script src="js/subMenu.js"></script>
+<!-- <script src="sockets/socketClient.js"></script> -->
+<!-- <script src="models/server.js"></script> --> 
+</body>
+</html>

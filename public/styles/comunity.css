@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Klee One', cursive;
+}
+html body{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.container-Padre{
+    /* margin: 10px; */
+    width: 100%;
+    height: 100%;
+    margin-left: 200px !important;
+    background-color: black;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    position: relative;
+    display: block;
+    justify-content: center;
+}
+
+.container-Padre .cabecera{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    border: 3px solid red;
+    border-radius: 5px 10px 5px 10px;
+}
+.container-Padre .cabecera h1{
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+.cuerpo{
+    position: relative;
+    background-color: azure;
+    height: 100%;
+    max-height: 550px;
+    width: 100%;
+    max-width: 1150px;
+    margin:auto;
+    border: solid black;
+    border-radius: 15px;
+}
+.cuerpo form{
+    background-color: aliceblue;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 62px;
+    border: 1px solid rgb(57, 51, 51);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.msgSend{
+    width: 100%;
+    max-width: 950px;
+    padding: 10px;
+    margin:5px 5px 5px 5px;
+    border: 1px solid black;
+    margin-right: 15px;
+}
+.cuerpo form div{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    border: 1px solid rgb(57, 51, 51);
+    transition: all 100ms;
+}
+.cuerpo form div.icon:hover{
+    background-color:antiquewhite ;
+    cursor: pointer;
+    transition: all 100ms;
+}
+.cuerpo form div:nth-of-type(1){
+    width: 100%;
+    border-bottom-left-radius: 10px;
+}
+.cuerpo form div:nth-of-type(3){
+    border-bottom-right-radius: 10px;   
+}
+.cuerpo form div img{
+    margin: 5px;
+    /* width: 50px; */
+        /* border: 1px solid violet; */
+}
+.recibeMSG{
+    height: 100%;
+    max-height: 485px;
+    border: 1px solid rgb(57, 51, 51);
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    overflow-y: auto;
+    text-overflow: clip;
+    background-color: brown;
+}

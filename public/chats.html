@@ -1,0 +1,66 @@
+<script>
+    const correo = localStorage.getItem("correo");
+    if( correo == undefined ){    window.location.href='./login.html';    } 
+
+</script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/subMenu.css">
+    <link rel="stylesheet" href="./styles/chats.css">
+    <title>Chats</title>
+</head>
+<body>
+    <div class="" id="subMenu">
+        <div class="navCon-Padre">
+            <p class="navCon" onclick="navCon()" id="navCon"><a href="#">&#9776;</a></p>
+        </div>
+        <div class="container-user" id="container-user" style="display: none;">
+            <p class="nombreUser">Paulo R.</p>
+            <p class="foto">Mi Foto va aquí.</p>
+            <p><a href="#">Perfil</a></p>
+            <p><a href="#">Mis Chats</a></p>
+            <div class="fastChat">
+                <p><a href="#">Acceso Rápidos</a></p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="containerTotal">
+        <div class="containerPadre">
+            <div class="container-chat">
+                <div class="cabecera-nombre"><h1 id="chatN"></h1>
+                    <form action="#">
+                        <input type="text" placeholder="Correo... " id="chatCorreo"> 
+                        <button type="reset" id="btnChatCorreo">Chatear.</button> 
+                    </form>
+                </div>
+                    <div class="msgPrivados" >
+                        <div id="msgPrivados"></div>
+                    </div>
+                <div class="msgSend">
+                    <form action="">
+                        <div>
+                            <input type="text" name="" id="msgEnviar" placeholder="Escribe aquí tu mensaje...">
+                        </div>
+                        <div class="icon" id="btnEnviar"><img src="./img/send.svg" width="40" height="40"></div>
+                        <div class="icon"><img src="./img/microphone.svg" alt="" width="40" height="40"></div>
+                    </form>
+                    
+                </div>
+            </div>
+            <div class="container-online">
+                <div class="container-hijo-online" id="correosUsuarios"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./js/chats.js"></script>
+    <script src="./js/subMenu.js"></script>
+</body>
+</html>

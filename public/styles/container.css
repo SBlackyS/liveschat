@@ -1,0 +1,89 @@
+body{
+    position: relative;
+    display: flex;
+}
+.container-Padre{
+    position: relative;
+    display: block;
+    margin-left: 200px;
+    width: 100%;
+    max-width:1050px;
+    margin-right: 100px;
+}
+.cabecera{
+    height: 100%;
+    max-height: 150px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 4px solid black ;
+}
+.cabecera h1{
+    letter-spacing: 1px;
+    font-size: 65px;
+    font-style: oblique;
+}
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: beige;
+
+}
+.container div{
+    position: relative;
+    border:4px solid;
+    border-radius: 1.15px;
+    border-bottom-style: outset;
+    border-bottom-color: beige;
+    width: 100%;
+    max-width: auto;
+    height: 300px;
+    margin: 10px;
+    background-color: aquamarine;
+}
+.comunity:hover > .comunity-trasera{
+    height: 300px !important;
+    display: block;
+    visibility: visible;
+    background-image: none;
+    background-color: black !important;
+    border: none !important;
+    opacity: 0.7;
+    transition: all 300ms;
+}
+.comunity-trasera{
+    color:antiquewhite ;
+    bottom: 0px;
+    display: block;
+    visibility: hidden;
+    position: absolute !important;
+    margin: 0 !important;
+    height: 0px !important;
+    cursor: pointer;
+}
+.container div:nth-of-type(1){
+    background-image: url('../img/shigatsu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container div:nth-of-type(2){
+    background-image: url('../img/elbicho.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: center;
+    background-color: antiquewhite;
+}
+.container div:nth-of-type(3){
+    background-color: violet;
+}
+.container div:nth-of-type(4){
+    background-color:cyan;
+}
+.container div:nth-of-type(5){
+    background-color: greenyellow;
+}
+.footer h1{
+    display: flex;
+    justify-content: center;
+}

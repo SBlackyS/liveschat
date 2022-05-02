@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Kleen One', cursive; 
+}
+
+html body {
+    height: 100%;
+    width:  100%;
+    position: relative;
+    display: flex;
+    /* background-color: black; */
+}
+
+.containerTotal {
+    background-color: greenyellow;   
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.containerPadre {
+    height: 100%;
+    width: 100%;
+    max-width: 950px;
+    background-color: red;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    /* align-content: center; */
+}
+
+.container-chat{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 550px;
+    height: 100%;
+    max-height: 600px;
+    background-color: blue;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    margin: auto;
+    margin-right: 10px;
+    padding: 10px;
+}
+.cabecera-nombre{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+.container-chat *{
+    background-color: azure;
+    width: 100%;
+    /* margin: 10px;  */
+    border-radius: 10px;
+}
+
+.container-chat div h1 {
+    height: auto;
+    text-align: center;
+    width: 100%;
+}
+.cabecera-nombre{
+    text-align: center;
+}
+.container-chat .msgPrivados{
+    height: 100%;
+    max-height: 450px;
+    background-color:aquamarine;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.container-chat .msgPrivados div:nth-of-type(1){
+    width: 100%;
+    max-width: auto;
+    height: 100%;
+    margin: auto;
+    background-color: beige;
+}
+
+.msgSend{
+    position: relative;
+    width: 100%;
+
+    height: 60px;
+    background-color: white;
+    margin: auto;
+ 
+    display: inline-block;
+    /* margin-bottom: 16px; */
+    /* display: flex; */
+}
+.msgSend form{
+    margin: auto;
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.msgSend form div {
+    width: auto;
+    height: auto;
+    display: flex;
+    background-color: black;
+}
+.msgSend form div:nth-of-type(1) {
+    /* z-index: 100; */
+    margin: 2px;
+    width: 410px;
+    background-color: aqua;
+
+}
+.msgSend form div:nth-of-type(1) input {
+    border: solid 3px brown;
+    height: 50px;
+    /* padding: 5px; */
+    margin: auto;
+    margin-left:2px; 
+    margin-right: 2px;
+    padding: 10px;
+}
+.msgSend form div:nth-of-type(2){
+    align-items: center;
+    height: auto;
+    margin: 2px;
+    padding: 5px;
+    background-color: red;
+    cursor: pointer;
+    /* width: 40px; */
+}
+.msgSend form div:nth-of-type(3){
+    align-items: center;
+    padding: 5px;
+    margin: 2px;
+    cursor: pointer;
+}
+.container-online{
+    width: 100%;
+    max-width: 310px;
+    height: 100%;
+    max-height: 600px;
+    background-color: blueviolet;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 1px;
+    border-top-left-radius: 1px;
+    /* position: relative; */
+    display: inline-block;
+    margin: auto;
+    /* margin-right: 10px; */
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.container-hijo-online{
+    width: 100%;
+    max-width: 290px;
+    height: 100%;
+    max-height: 580px;
+    margin: 10px;
+    background-color: antiquewhite;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y:auto;
+    padding: 10px;
+}
+
+.container-hijo-online *{
+    width: 100%;
+    max-width: 250px;
+    height: 120px;
+    background-color: aliceblue;
+    margin: auto;
+    margin-bottom: 5px;
+    cursor: pointer;
+    
+}
